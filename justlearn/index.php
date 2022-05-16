@@ -30,6 +30,9 @@
     <div id="formFooter">
       <a class="underlineHover" href="registro.php">Registrar</a>
     </div>
+    <div id="formFooter">
+      <a class="underlineHover" href="cursos.php">Ir a cursos</a>
+    </div>
 
   </div>
 </div>
