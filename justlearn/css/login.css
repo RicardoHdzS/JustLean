@@ -259,12 +259,15 @@ input[type=password]:placeholder {
 
 /* Simple CSS3 Fade-in Animation */
 .underlineHover:after {
+  color: #ffa900;
   display: block;
   left: 0;
   bottom: -10px;
   width: 0;
   height: 2px;
+  
   background-color: #ffa900;
+
   content: "";
   transition: width 0.2s;
 }
@@ -276,7 +279,9 @@ input[type=password]:placeholder {
 .underlineHover:hover:after{
   width: 100%;
 }
-
+.underlineHover{
+  color: #000000;
+}
 h1{
     color:#ffa900;
 }
