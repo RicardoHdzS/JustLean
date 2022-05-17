@@ -11,7 +11,7 @@ if (isset($_SESSION['usuario'])) {
 					<h1 class="display-4">Gestor de archivos con php y mysql</h1>
 					<p class="lead">Aplicación web encargada de gestionar archivos, por medio de categorias</p>
 					<hr class="my-4">
-					<p><img src="../img/logo.png" class="img-thumbnail" width="300px" /></p>
+					<p><img src="../img/logo.png" class="" width="300px" /></p>
 					<p class="lead">
 						<a class="btn btn-primary btn-lg" href="#" role="button">Ir al curso</a>
 					</p>
