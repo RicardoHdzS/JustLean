@@ -19,8 +19,6 @@
 				autocomplete="off">
 					<label>Nombre personal</label>
 					<input type="text" name="nombre" id="nombre" class="form-control" required="">
-					<label>Fecha de nacimiento</label>
-					<input type="text" name="fechaNacimiento" id="fechaNacimiento" class="form-control" required="" readonly="">
 					<label>Email o correo</label>
 					<input type="email" name="correo" id="correo" class="form-control" required="">
 					<label>Nombre de usuario</label>
@@ -46,20 +44,6 @@
 	<script src="librerias/sweetalert.min.js"></script>
 
 	<script type="text/javascript">
-
-
-		$(function() {
-		    var fechaA = new Date();
-		    var yyyy = fechaA.getFullYear();
-
-		    $("#fechaNacimiento").datepicker({
-		        changeMonth: true,
-		        changeYear: true,
-		        yearRange: '1900:' + yyyy,
-		        dateFormat: "dd-mm-yy"
-		    });
-		});
-
 
 		function agregarUsuarioNuevo() {
 			$.ajax({

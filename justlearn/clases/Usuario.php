@@ -11,14 +11,12 @@
 				return 2;
 			} else {
 				$sql = "INSERT INTO t_usuarios (nombre,
-											fechaNacimiento,
 											email,
 											usuario,
 											password) 
-							VALUES (?, ?, ?, ?, ?)";
+							VALUES (?, ?, ?, ?)";
 				$query = $conexion->prepare($sql);
-				$query->bind_param('sssss', $datos['nombre'],
-											$datos['fechaNacimiento'],
+				$query->bind_param('ssss', $datos['nombre'],
 											$datos['email'],
 											$datos['usuario'],
 											$datos['password']);
