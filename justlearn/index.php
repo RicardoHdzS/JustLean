@@ -15,24 +15,23 @@
     <!-- Icon -->
     <div class="fadeIn first">
       <p></p>
-      <img src="img/logo.png" class="img-thumbnail" width="120" id="icon" alt="User Icon" />
+      <img src="img/logo.png" width="120" id="icon" alt="User Icon" />
       
     </div>
 
     <!-- Login Form -->
     <form method="post" id="frmLogin" onsubmit="return logear()">
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="username" required="">
-      <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" required="">
-      <input type="submit" class="fadeIn fourth" value="Entrar">
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario" required="">
+      <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" required="">
+      <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
+      <input type="submit" class="fadeIn fourth" value="Ver cursos">
     </form>
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="registro.php">Registrar</a>
+      <a class="underlineHover" href="registro.php">Registrarse</a>
     </div>
-    <div id="formFooter">
-      <a class="underlineHover" href="cursos.php">Ir a cursos</a>
-    </div>
+   
 
   </div>
 </div>
