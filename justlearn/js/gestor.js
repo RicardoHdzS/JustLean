@@ -15,9 +15,9 @@ function agregarArchivosGestor() {
 			if (respuesta == 1) {
 				$('#frmArchivos')[0].reset();
 				$('#tablaGestorArchivos').load("gestor/tablaGestor.php");
-				swal(":D", "Agregado con exito!", "success");
+				swal("Objeto de aprendizaje agregado con exito");
 			} else {
-				swal(":(", "Fallo al agregar !", "error");
+				swal("Fallo al agregar el objeto de aprendizaje");
 			}
 		}
 	});
@@ -25,8 +25,8 @@ function agregarArchivosGestor() {
 
 function eliminarArchivo(idArchivo) {
 	swal({
-	  title: "Estas seguro de eliminar este archivo?",
-	  text: "Una vez eliminado, no podra recuperarse!",
+	  title: "¿Desea eliminar el objeto de aprendizaje?",
+	  text: "",
 	  icon: "warning",
 	  buttons: true,
 	  dangerMode: true,
@@ -44,11 +44,11 @@ function eliminarArchivo(idArchivo) {
 
 
 	    				$('#tablaGestorArchivos').load("gestor/tablaGestor.php");
-	    				swal("Eliminado con exito!", {
+	    				swal("Objeto de aprendizaje eliminado", {
 	      					icon: "success",
 	    				});
 	    			} else {
-	    				swal("Error al eliminar!", {
+	    				swal("Error al eliminar el objeto de aprendizaje", {
 	      					icon: "error",
 	    				});
 	    			}

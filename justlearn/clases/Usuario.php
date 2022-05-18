@@ -10,13 +10,13 @@
 			if (self::buscarUsuarioRepetido($datos['usuario'])) {
 				return 2;
 			} else {
-				$sql = "INSERT INTO t_usuarios (nombre,
+				$sql = "INSERT INTO t_usuarios (nombreU,
 											email,
 											usuario,
 											password) 
 							VALUES (?, ?, ?, ?)";
 				$query = $conexion->prepare($sql);
-				$query->bind_param('ssss', $datos['nombre'],
+				$query->bind_param('ssss', $datos['nombreU'],
 											$datos['email'],
 											$datos['usuario'],
 											$datos['password']);

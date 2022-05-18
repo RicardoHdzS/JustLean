@@ -24,14 +24,25 @@
       <input type="text" id="login" class="fadeIn second" name="login" placeholder="Usuario" required="">
       <input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" required="">
       <input type="submit" class="fadeIn fourth" value="Iniciar Sesión">
-      <input type="submit" class="fadeIn fourth" value="Ver cursos">
     </form>
 
     <!-- Remind Passowrd -->
     <div id="formFooter">
-      <a class="underlineHover" href="registro.php">Registrarse</a>
+      <div class="row">
+        <div class="col-sm-12">
+          <a class="underlineHover" href="registro.php">Registrarse</a> 
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <a class="underlineHover" href="cursos.php">Ver Cursos</a>
+        </div>
+      </div>
     </div>
-   
+    
+
+  
 
   </div>
 </div>
@@ -51,7 +62,7 @@
                 if (respuesta == 1) {
                     window.location = "vistas/inicio.php";
                 } else {
-                    swal(":(", "Fallo al entrar!", "error");
+                    swal("Usuario o contraseña, incorrectos");
                 }
             }
         });

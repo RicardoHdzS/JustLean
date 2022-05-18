@@ -5,7 +5,7 @@
 	$idUsuario = $_SESSION['idUsuario'];
 	$sql = "SELECT 
 				archivos.id_archivo as idArchivo,
-				usuario.nombre as nombreUsuario,
+				usuario.nombreU as nombreUsuario,
 			    categorias.nombre as categoria,
 			    archivos.nombre as nombreArchivo,
 			    archivos.tipo as tipoArchivo,

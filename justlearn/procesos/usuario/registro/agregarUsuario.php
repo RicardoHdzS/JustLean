@@ -4,7 +4,7 @@
 
 	$password = sha1($_POST['password']);
 	$datos = array(
-				"nombre" => $_POST['nombre'], 
+				"nombreU" => $_POST['nombreU'], 
 			    "email" => $_POST['correo'], 
 			    "usuario" => $_POST['usuario'], 
 			    "password" => $password

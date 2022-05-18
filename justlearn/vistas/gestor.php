@@ -10,7 +10,7 @@ if(isset($_SESSION['usuario'])){
 		<div class="container">
 			<h1 class="display-4"><b>GESTOR DE OBJETOS DE APRENDIZAJE<b></h1>
 			<span class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarArchivos">
-				<span class="fas fa-plus-circle"></span> Agregar archivos
+				<span class="fas fa-plus-circle"></span> Agregar Objeto de Aprendizaje
 			</span>
 			<hr>
 			<div id="tablaGestorArchivos"></div>
@@ -26,16 +26,16 @@ if(isset($_SESSION['usuario'])){
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Agregar Objeto de Aprendizaje</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
 				<div class="modal-body">
 					<form id="frmArchivos" enctype="multipart/form-data">
-						<label>Categoria</label>
+						<label>Seleccione el curso</label>
 						<div id="categoriasLoad"></div>
-						<label>Selecciona archivos</label>
+						<label>Añada Objeto de aprendizaje</label>
 						<input type="file" name="archivos[]" id="archivos" class="form-control" multiple="multiple">
 					</form>
 				</div>

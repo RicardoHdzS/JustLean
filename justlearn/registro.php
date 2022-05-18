@@ -19,7 +19,7 @@
 				<form id="frmRegistro" method="post" onsubmit="return agregarUsuarioNuevo()" 
 				autocomplete="off">
 					
-					<input type="text" id="nombre" class="fadeIn third" name="nombre" placeholder="Nombre" required="">
+					<input type="text" id="nombreU" class="fadeIn third" name="nombreU" placeholder="Nombre" required="">
 					<input type="text" id="usuario" class="fadeIn third" name="usuario" placeholder="Nombre de Usuario o Nickname" required="">
 					<input type="email" id="correo" class="fadeIn third" name="correo" placeholder="Correo" required="">
 					<input type="password" id="password" class="fadeIn third" name="password" placeholder="Contraseña" required="">
@@ -61,11 +61,11 @@
 
 					if (respuesta == 1) {
 						$("#frmRegistro")[0].reset();
-						swal(":D", "Agregado con exito!", "success");
+						swal("Usuario Registrado");
 					} else if(respuesta == 2){
-						swal("Este usuario ya existe, por favor escribe otro !!!");
+						swal("Intente con otro usuario");
 					} else {
-						swal(":(", "Fallo al agregar!", "Error");
+						swal("Usuario no Registrado");
 					}
 				}
 			});

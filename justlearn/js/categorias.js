@@ -14,9 +14,9 @@ function agregarCategoria() {
 				if (respuesta == 1) {
 					$('#tablaCategorias').load("categorias/tablaCategoria.php");
 					$('#nombreCategoria').val("");
-					swal(":D", "Agregado con exito!", "success");
+					swal("Curso Agregado");
 				} else {
-					swal(":(", "Fallo al agregar!", "error");
+					swal("Fallo al crear el curso");
 				}
 			}
 		});
@@ -26,13 +26,13 @@ function agregarCategoria() {
 function eliminarCategorias(idCategoria) {
 	idCategoria = parseInt(idCategoria);
 	if (idCategoria < 1) {
-		swal("No tienes id de categoria!");
+		swal("No tienes id de curso");
 		return false;
 	} else {
 		//*****************************************
 		swal({
-		  title: "Estas seguro de eliminar esta categoria?",
-		  text: "Una vez eliminada, no podra recuperarse!",
+		  title: "¿Está seguro de querer eliminar este curso?",
+		  text: "",
 		  icon: "warning",
 		  buttons: true,
 		  dangerMode: true,
@@ -47,11 +47,11 @@ function eliminarCategorias(idCategoria) {
 		   				respuesta = respuesta.trim();
 		   				if (respuesta == 1) {
 		   					$('#tablaCategorias').load("categorias/tablaCategoria.php");
-		   					swal("Eliminado con exito!", {
+		   					swal("Curso eliminado", {
 		      					icon: "success",
 		    				});
 		   				} else {
-		   					swal(":(", "Fallo al eliminar!", "error");
+		   					swal("Fallo al eliminar el curso");
 		   				}
 		   			}
 		   		});	
