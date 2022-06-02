@@ -36,7 +36,7 @@
 
       <div class="row">
         <div class="col-sm-12">
-          <a class="underlineHover" href="cursos.php">Ver Cursos</a>
+          <a class="underlineHover" href="usuario/cursos.php">Ver Cursos</a>
         </div>
       </div>
     </div>

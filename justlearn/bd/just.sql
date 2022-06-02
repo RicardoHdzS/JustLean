@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2022 at 06:59 AM
+-- Generation Time: Jun 03, 2022 at 12:55 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -39,23 +39,6 @@ CREATE TABLE `t_archivos` (
   `fecha` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `t_archivos`
---
-
-INSERT INTO `t_archivos` (`id_archivo`, `id_usuario`, `id_categoria`, `nombre`, `tipo`, `unidad`, `ruta`, `fecha`) VALUES
-(8, 12, 7, 'estreno curso.png', 'png', 0, '../../archivos/12/estreno curso.png', '2020-03-02 22:51:10'),
-(9, 12, 7, 'logo.png', 'png', 0, '../../archivos/12/logo.png', '2020-03-02 22:51:10'),
-(10, 12, 7, 'gestor de archivos documentacion.pdf', 'pdf', 0, '../../archivos/12/gestor de archivos documentacion.pdf', '2020-03-02 22:51:35'),
-(11, 12, 7, 'facultad.mp4', 'mp4', 1, '../../archivos/12/facultad.mp4', '2020-03-02 23:36:42'),
-(12, 12, 8, 'Beethoven Virus.mp3', 'mp3', 2, '../../archivos/12/Beethoven Virus.mp3', '2020-03-02 23:41:13'),
-(13, 13, 9, 'Inteligencia Artificial. Un Enfoque Modern - Stuart Russell.pdf', 'pdf', 1, '../../archivos/13/Inteligencia Artificial. Un Enfoque Modern - Stuart Russell.pdf', '2022-05-06 15:27:50'),
-(14, 13, 9, 'abc.png', 'png', 5, '../../archivos/13/abc.png', '2022-05-06 15:28:08'),
-(15, 13, 9, 'ia.docx', 'docx', 6, '../../archivos/13/ia.docx', '2022-05-06 15:28:15'),
-(16, 13, 10, 'PROCESO DE PRUEBAS DE SOFTWARE PARA UN MODELO DE CALIDAD.pdf', 'pdf', 8, '../../archivos/13/PROCESO DE PRUEBAS DE SOFTWARE PARA UN MODELO DE CALIDAD.pdf', '2022-05-11 20:01:55'),
-(17, 13, 10, 'Plan de SQA.pdf', 'pdf', 1, '../../archivos/13/Plan de SQA.pdf', '2022-05-16 22:14:31'),
-(18, 20, 11, 'examenia__1_.pdf', 'pdf', 0, '../../archivos/20/examenia__1_.pdf', '2022-05-17 03:27:08');
-
 -- --------------------------------------------------------
 
 --
@@ -68,20 +51,6 @@ CREATE TABLE `t_categorias` (
   `nombre` varchar(255) NOT NULL,
   `fechaInsert` datetime NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `t_categorias`
---
-
-INSERT INTO `t_categorias` (`id_categoria`, `id_usuario`, `nombre`, `fechaInsert`) VALUES
-(7, 19, 'Móviles', '2020-03-02 22:49:22'),
-(8, 16, 'PROLOG', '2020-03-02 23:39:43'),
-(9, 13, 'Inteligencia Artificial', '2022-05-06 15:26:08'),
-(10, 13, 'Validación', '2022-05-11 20:00:56'),
-(11, 20, 'POO', '2022-05-17 03:24:43'),
-(12, 22, 'Automatas', '2022-05-17 04:02:05'),
-(13, 22, 'Automatas ll', '2022-05-17 04:09:06'),
-(14, 13, 'Programación Web', '2022-05-17 04:10:38');
 
 -- --------------------------------------------------------
 
@@ -111,7 +80,10 @@ INSERT INTO `t_usuarios` (`id_usuario`, `nombreU`, `email`, `usuario`, `password
 (19, 'Javier', 'javi@gmail.com', 'Jav', '8cb2237d0679ca88db6464eac60da96345513964', '2022-05-17 03:20:20'),
 (20, 'Andrés', 'andres@gmail.com', 'Andrés9', '8cb2237d0679ca88db6464eac60da96345513964', '2022-05-17 03:23:23'),
 (21, 'Ángel', 'avv@gmail.com', 'AVV', '8cb2237d0679ca88db6464eac60da96345513964', '2022-05-17 03:47:13'),
-(22, 'Rica', 'garcia@gmail.com', 'cachon', '8cb2237d0679ca88db6464eac60da96345513964', '2022-05-17 03:58:38');
+(22, 'Rica', 'garcia@gmail.com', 'cachon', '8cb2237d0679ca88db6464eac60da96345513964', '2022-05-17 03:58:38'),
+(23, 'Antonio', 'k8@gmail.com', 'Kroos', '8cb2237d0679ca88db6464eac60da96345513964', '2022-05-31 01:00:10'),
+(24, 'Angel', 'ang@gmail.com', 'angel', '8cb2237d0679ca88db6464eac60da96345513964', '2022-05-31 01:04:02'),
+(25, 'tec', 'asdfg@gmail.com', 'tec', 'f7c3bc1d808e04732adf679965ccc34ca7ae3441', '2022-06-01 09:58:55');
 
 --
 -- Indexes for dumped tables
@@ -146,19 +118,19 @@ ALTER TABLE `t_usuarios`
 -- AUTO_INCREMENT for table `t_archivos`
 --
 ALTER TABLE `t_archivos`
-  MODIFY `id_archivo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_archivo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 
 --
 -- AUTO_INCREMENT for table `t_categorias`
 --
 ALTER TABLE `t_categorias`
-  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_categoria` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `t_usuarios`
 --
 ALTER TABLE `t_usuarios`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- Constraints for dumped tables
